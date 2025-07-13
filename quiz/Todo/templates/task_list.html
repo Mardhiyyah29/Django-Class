@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list </title>
+</head>
+<body>
+    <h1>Welcome,{{user.username}}</h1>
+    <a href="{% url 'task-create' %}">Add a new Task</a>
+    <a href="{% url 'logout' %}">Log out</a>
+
+    <h3>Task for today</h3>
+    <ul>
+    {%for task in tasks%}
+        <li> 
+            {{ task.title}} {% if task.completed %}completed {%endif%}
+            <a href="{% url 'task-delete' task.id %}">Delete task</a>
+        </li>
+
+        {%empty%}
+        <li>No task yet</li>
+        {%endfor%}
+    </ul>
+
+</body>
+</html>
