@@ -1,3 +1,40 @@
+
 body{
-    background-color: blue;
+    background-color:blue;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+ 
+.carousel-caption{
+   bottom: 30% !important;
+}
+.carousel-caption h5{
+ font-size: 2rem !important;
+}
+.carousel-caption p{
+ font-size: 1.5rem !important;
+}
+.image{
+    height: 500px;
+    /* width: 100%; */
+    object-fit: cover;
+}
+.navbar-collapse{
+flex-grow: 0 !important;
+}
+.navbar-nav{
+    column-gap: 20px;
+}
+
+.container{
+    width: 100%;
+    height: 70%;
+    padding: 30px;
+    border-radius: 9px;
+    margin: 0;
+    box-shadow: ;
+    align-items: center;
+    box-sizing: border-box;
+
 }
