@@ -1,40 +1,114 @@
 
-body{
-    background-color:blue;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+
+.carousel-caption {
+  bottom: 30% !important;
 }
- 
-.carousel-caption{
-   bottom: 30% !important;
+.carousel-caption h5 {
+  font-size: 2rem !important;
 }
-.carousel-caption h5{
- font-size: 2rem !important;
+.carousel-caption p {
+  font-size: 1.5rem !important;
 }
-.carousel-caption p{
- font-size: 1.5rem !important;
+.image {
+  height: 500px;
+  /* width: 100%; */
+  object-fit: cover;
 }
-.image{
-    height: 500px;
-    /* width: 100%; */
-    object-fit: cover;
+.navbar-collapse {
+  flex-grow: 0 !important;
 }
-.navbar-collapse{
-flex-grow: 0 !important;
-}
-.navbar-nav{
-    column-gap: 20px;
+.navbar-nav {
+  column-gap: 20px;
 }
 
-.container{
-    width: 100%;
-    height: 70%;
-    padding: 30px;
-    border-radius: 9px;
-    margin: 0;
-    box-shadow: ;
-    align-items: center;
-    box-sizing: border-box;
+.login-form label {
+  display: block !important;
+  font-size: 0.7rem;
+}
+.login-form input {
+  width: 100% !important;
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.login-form button {
+  width: 100% !important;
+  height: 40px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
+.signup-form label {
+  display: block !important;
+  font-size: 1rem;
+}
+.signup-form input {
+  width: 100% !important;
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.signup-form button {
+  width: 100% !important;
+  height: 40px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+.task-list {
+  gap: 20px !important;
+}
+
+.task-list button {
+  margin-left: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.task-list button:hover {
+  background-color: #5a5050;
+}
+
+.task li {
+  list-style: none;
+  background-color: #007bff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: white;
+  border-radius: 5px;
+}
+
+.task li:nth-child(even) {
+  background-color: #97c9ff;
+}
+.task li:hover {
+    background-color:blueviolet;
+    cursor: pointer;
+    }
+.task i {
+  color: white;
+    margin-left: 10px;
+;
+    cursor: pointer;
+}
+.task i:hover {
+  color:black;
 }

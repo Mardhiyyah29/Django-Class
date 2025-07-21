@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 LOGIN_REDIRECT_URL = 'task-list'
-LOGOUT_REDIRECT_URL = 'login'
+LOGOUT_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'quiz.wsgi.application'
 
 
